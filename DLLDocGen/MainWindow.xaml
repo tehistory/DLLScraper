@@ -1,0 +1,29 @@
+﻿<Window x:Class="DLLDocGen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DLLDocGen"
+        mc:Ignorable="d"
+        Title="DLL Documentation Generator" Height="300" Width="500">
+    <Grid>
+        <Canvas>
+            <Canvas Height="263" Canvas.Left="13" Canvas.Top="8" Width="474" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.061"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.406"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Label x:Name="labelIn" Content="File Path to DLL" Height="25" Canvas.Left="10" Canvas.Top="19" Width="229" RenderTransformOrigin="0.5,0.562"/>
+                <TextBox x:Name="textBoxIn" Height="48" Canvas.Left="10" Canvas.Top="44" Text="C:\\" TextWrapping="Wrap" Width="455"/>
+                <Label x:Name="labelOut" Content="File Path for txt file - Please select a Folder" Height="27" Canvas.Left="11" Canvas.Top="111" Width="297"/>
+                <TextBox x:Name="textBoxOut" Height="44" Canvas.Left="11" Canvas.Top="140" Text="C:\Users\Public\Documents" TextWrapping="Wrap" Width="452"/>
+                <Button x:Name="GenerateButton" Content="Generate Documentation" Height="45" Canvas.Left="147" Canvas.Top="195" Width="155" Background="#FFBFBFBF" Click="GenerateButton_Click"/>
+            </Canvas>
+        </Canvas>
+
+    </Grid>
+</Window>

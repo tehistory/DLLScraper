@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DLLDocGen/1.0.0": {
+        "runtime": {
+          "DLLDocGen.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DLLDocGen/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
